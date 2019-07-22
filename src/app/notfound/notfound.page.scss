@@ -1,0 +1,40 @@
+ion-content {
+  --background: #FCFCFC;
+  margin:0; 
+  padding:0; 
+  overflow:hidden;
+}
+
+#hata{ 
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right: 0;
+  margin: auto; 
+  width:80%;
+}
+
+.foot {
+  text: {
+      align:left;
+      transform:capitalize;
+  }
+}
+
+svg {
+  width: 100%;
+  height: auto;
+  path{
+    stroke-dasharray: 350;
+    stroke-dashoffset: -350;
+    fill: transparent;
+   animation: dort 12s linear forwards;
+ /*   transition: stroke-dashoffset 0.5s linear 0.4s, fill 0.4s ease; */
+ }
+}
+@keyframes dort{
+  to{
+    stroke-dasharray: 0;
+  }
+}
